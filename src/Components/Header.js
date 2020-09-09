@@ -10,10 +10,9 @@ import Contacts from '../Pages/Contacts';
 class Header extends Component {
     render() {
         return (
-           <div>
 
-           
-            <Navbar collapseOnSelect expanded="md" bg="dark" variant="dark">
+           <>
+            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">
                         <img
@@ -25,7 +24,7 @@ class Header extends Component {
                         />mySite
                     </Navbar.Brand>
 
-                    {/* when small site size show sendwich button */}
+                 
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav" >
                         <Nav className="mr-auto">
@@ -55,7 +54,7 @@ class Header extends Component {
                     <Route exact path="/blog" component={Blog} />
                 </Switch>
             </Router>
-            </div>
+            </>
         );
     }
 }
